@@ -3,14 +3,8 @@ import { Card, CardImg, CardText, CardBody, CardTitle} from 'reactstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import StarRatingComponent from 'react-star-rating-component';
 
-
 const MovieCard = (props) => {
-    //const [posterURL, setPosterURL] = useState("posterURl")
-    //const [title, setTitle] = useState("Movie Title")
-    //const [description, setDescription] = useState("This is film description")
-    //const [rating, setRating] = useState("******")
-
-    //setPosterURL = () => 1
+ 
     return (
         <div>
             <Card className="movie-card-container" >
