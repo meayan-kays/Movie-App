@@ -1,10 +1,7 @@
 import React from 'react'
 import MovieCard from './MovieCard'
-//import { Card, CardImg, CardText, CardBody, CardTitle} from 'reactstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { moviesData } from './MoviesData';
-//import StarRatingComponent from 'react-star-rating-component';
-
 
 const MovieList = ({titleSearch, rateSearch}) => {
 
@@ -17,10 +14,8 @@ const MovieList = ({titleSearch, rateSearch}) => {
                 && el.rating >= (rateSearch)) 
                 .map(el => ( <MovieCard {...el} key={el.title} />))}
             </div>
-            
         </div> 
     )
 }
-
-
+                     
 export default MovieList
