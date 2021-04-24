@@ -1,8 +1,5 @@
 import React from 'react'
 import StarRatingComponent from 'react-star-rating-component';
-import { moviesData } from './MoviesData';
-import MovieCard from './MovieCard'
-
 
 const Filter = ({titleSearch, setTitleSearch, rateSearch, setRateSearch}) => {
     
