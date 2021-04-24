@@ -3,21 +3,17 @@ import { Button, Modal } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { moviesData } from './MoviesData';
 
-
-
 const MovieAdding = ({addMovie}) => {
     const [showModal, setShowModal]= useState(false)
     const [title, setTitle] = useState("")
     const [posterURL, setPosterURL] = useState("")
     const [description, setDescription] = useState("")
     const [rating, setRating] = useState(0)
-
+    let newID = moviesData.length + 1;
 
     const handleShow = () => {setShowModal(true)}
     const closeShow = () => {setShowModal(false)}
-
-    let newID = moviesData.length + 1;
-
+    
     const handleSubmit = () => {
         let newMovie = {
             id : newID ,
@@ -34,7 +30,6 @@ const MovieAdding = ({addMovie}) => {
         setRating(0)
 
     }
-    
     
     return (
         <div className="movie-add">
